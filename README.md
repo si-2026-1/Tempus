@@ -2,142 +2,96 @@
 
 ## 🧩 Problema
 
-Alunos da Universidade de Brasília (UnB) possuem diversas habilidades úteis — como escrita, programação, tradução, ensino, entre outras — mas geralmente não possuem recursos financeiros para contratar serviços.
+No contexto acadêmico da Universidade de Brasília (UnB), observa-se um sistema onde alunos possuem diversas habilidades técnicas e teóricas — como escrita acadêmica, programação, tradução e ensino — mas carecem de recursos financeiros para contratar serviços de apoio.
 
-Assim, esses alunos também precisam de ajuda em áreas que não dominam.
-
-Isso cria um cenário onde:
-- Existe oferta de habilidades
-- Existe demanda por serviços
-- Mas não há um meio eficiente de troca sem dinheiro
+Como Sistema de Informação, o **Tempus** visa mitigar as seguintes falhas do cenário atual:
+- Existência de competências ociosas (oferta).
+- Necessidade de suporte especializado não atendida (demanda).
+- Ausência de um meio de troca eficiente e auditável que dispense o uso de moeda fiduciária.
 
 ---
 
 ## 🎯 Escopo
 
-O **Tempus** propõe um sistema de troca baseado em tempo.
+O **Tempus** propõe um sistema de troca baseado na Teoria Geral de Sistemas, onde o "tempo" é o insumo principal.
 
-- A moeda do sistema é **hora**
-- Cada hora de serviço prestado gera **1 crédito**
-- Créditos podem ser usados para solicitar serviços de outros usuários
+- **Unidade de Troca:** A moeda do sistema é a **hora**.
+- **Regra de Conversão:** 1 hora de serviço prestado = 1 crédito de tempo.
+- **Fluxo:** Créditos acumulados podem ser consumidos para solicitar serviços de qualquer outro usuário da rede.
 
-O sistema será uma aplicação web com:
-- Frontend interativo
-- Backend para regras de negócio
-- Banco de dados para persistência
+O sistema será documentado como um MVP (Produto Mínimo Viável) compreendendo:
+- Documentação de Requisitos e Backlog.
+- Modelagem Conceitual de Dados (MER/DER).
+- Protótipo de Alta Fidelidade (Figma).
+
+---
+
+## 👥 Stakeholders (Interessados)
+
+Para o desenvolvimento deste sistema de informação, identificamos os seguintes atores principais:
+* **Alunos (Usuários):** Prestadores e tomadores de serviços.
+* **Administradores (Equipe Tempus):** Responsáveis pela moderação de conflitos e manutenção da integridade dos dados.
+* **Universidade (Ambiente):** Provedora do ecossistema onde a troca ocorre.
 
 ---
 
 ## ⚙️ Requisitos Funcionais
 
-1. **Cadastro de Perfil e Skills**
-   - Usuário define:
-     - O que sabe fazer (oferta)
-     - O que deseja aprender/receber (demanda)
+1.  **Cadastro de Perfil e Skills**
+    * O usuário define sua oferta (skills) e sua demanda (o que precisa).
+2.  **Mural de Ofertas/Serviços**
+    * Listagem categorizada (Acadêmico, Técnico, Consultoria, Manutenção).
+3.  **Sistema de Agendamento/Solicitação**
+    * Fluxo de solicitação e confirmação mútua entre as partes.
+4.  **Carteira de Créditos (Time Wallet)**
+    * Gestão automatizada do saldo de horas do usuário.
+5.  **Histórico de Transações**
+    * Registro detalhado de interações e durações dos serviços.
+6.  **Sistema de Avaliação e Feedback**
+    * Reputação baseada em estrelas e comentários pós-serviço.
+7.  **Chat Interno**
+    * Canal direto para negociação de escopo e horários.
+8.  **Painel de Disputas/Moderação**
+    * Interface para resolução de problemas e ajustes de créditos.
 
-2. **Mural de Ofertas/Serviços**
-   - Listagem de serviços disponíveis
-   - Filtro por categorias:
-     - Acadêmico
-     - Técnico
-     - Consultoria
-     - Manutenção
+---
 
-3. **Sistema de Agendamento/Solicitação**
-   - Usuário pode solicitar um serviço
-   - Confirmação entre ambas as partes
+## 📖 Exemplos de Uso (User Stories)
 
-4. **Carteira de Créditos (Time Wallet)**
-   - Visualização do saldo de horas
-   - Débito e crédito automático por transação
-
-5. **Histórico de Transações**
-   - Registro de:
-     - Quem ajudou quem
-     - Duração do serviço
-
-6. **Sistema de Avaliação e Feedback**
-   - Avaliações por estrelas
-   - Comentários
-   - Reputação do usuário
-
-7. **Chat Interno**
-   - Comunicação entre usuários
-   - Negociação de detalhes do serviço
-
-8. **Painel de Disputas/Moderação**
-   - Abertura de chamados
-   - Revisão de créditos em caso de problema
+* *"Como **estudante de Letras**, quero oferecer revisão de ABNT para acumular créditos e poder solicitar monitoria de Python no futuro."*
+* *"Como **estudante de Engenharia**, preciso de ajuda com tradução de um artigo técnico para poder finalizar meu TCC."*
 
 ---
 
 ## 🧠 Detalhes do Produto
 
 ### 🔄 Modelo de Troca
-- 1 hora = 1 crédito
-- Não há variação de preço por skill (modelo igualitário)
+- 1 hora = 1 crédito (Modelo igualitário, independente da complexidade da tarefa).
 
-### 🔐 Segurança
-- Sistema de avaliação para evitar abuso
-- Moderação em disputas
-
-### 📊 Possíveis Extensões
-- Ranking de usuários
-- Gamificação (badges, níveis)
-- Sistema de recomendação de serviços
-
-### 🧱 Arquitetura
-- Frontend: React + Tailwind
-- Backend: Java (Spring)
-- Banco: postgreSQL
-- Deploy: Docker + serviço gratuito
-- Arquitetura MVC
+### 🛠️ Metodologia de Desenvolvimento
+[cite_start]O projeto segue as diretrizes da disciplina CIC0101[cite: 2], com foco em:
+* [cite_start]**Versionamento:** GitHub para documentação e controle de commits.
+* [cite_start]**Modelagem:** BPMN para processos e MER para dados[cite: 12, 13].
+* [cite_start]**Prototipagem:** Figma para a entrega T2[cite: 28].
 
 ---
 
-## 🚀 Épicos do Projeto
+## 🚀 Épicos do Projeto (Backlog T1)
 
-### 1. 👤 Gestão de Usuários
-- Cadastro e login
-- Edição de perfil
-- Definição de skills
-
-### 2. 📢 Marketplace de Serviços
-- Criação de ofertas
-- Listagem e busca
-- Filtros por categoria
-
-### 3. 🔁 Sistema de Trocas
-- Solicitação de serviço
-- Aceite/rejeição
-- Finalização da troca
-
-### 4. 💰 Carteira de Tempo
-- Controle de créditos
-- Atualização automática
-- Histórico financeiro
-
-### 5. ⭐ Reputação e Feedback
-- Avaliação de usuários
-- Sistema de estrelas
-- Comentários
-
-### 6. 💬 Comunicação
-- Chat entre usuários
-- Notificações
-
-### 7. ⚖️ Moderação
-- Abertura de disputas
-- Painel administrativo
-- Ajuste de créditos
+1.  **👤 Gestão de Usuários:** Perfis, Login e Skills.
+2.  **📢 Marketplace:** Criação e busca de ofertas com filtros.
+3.  **🔁 Sistema de Trocas:** Ciclo de vida da solicitação (Aceite/Finalização).
+4.  **💰 Carteira de Tempo:** Lógica de débito/crédito e extrato.
+5.  **⭐ Reputação:** Ciclo de feedback e confiança.
+6.  **💬 Comunicação:** Chat e notificações.
+7.  **⚖️ Moderação:** Fluxo de disputas e auditoria administrativa.
 
 ---
 
 ## 👨‍💻 Autores
 
-Carlos Cauã - 231034304
-Thomas Jefferson - 202033561
-Gabriel Bismarck - 170103323 
-Bruno Gabriel - 241022460 
-Gabriel Alexandre - 241038942 
-
+* Carlos Cauã - 231034304
+* Thomas Jefferson - 202033561
+* Gabriel Bismarck - 170103323
+* Bruno Gabriel - 241022460
+* Gabriel Alexandre - 241038942
