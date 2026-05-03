@@ -55,9 +55,15 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
     * Interface para resolução de problemas e ajustes de créditos.
 
 ---
-🔒 Requisitos Não Funcionais e Regras de Negócio (Complemento)
+🔒 Requisitos Não Funcionais
 
 1.  RNF1 (Segurança e Autenticação): O sistema deve garantir que    apenas usuários com e-mail institucional válido da Universidade de  Brasília (@aluno.unb.br ou @unb.br) possam se cadastrar.
+
+---
+📜 Regras de Negócio
+
+1. **RN1 Saldo inicial de créditos:** Todo usuário cadastrado receberá um saldo inicial de créditos de tempo ao ingressa na plataforma, permitindo novos membros solicitarem serviço antes de realizar alguma prestação.
+2. **RN2 Saldo será sempre positivo:** O usuário não poderá solicitar serviços que resultem em saldo negativo.
 
 ---
 
