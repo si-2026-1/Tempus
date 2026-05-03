@@ -55,6 +55,11 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
     * Interface para resolução de problemas e ajustes de créditos.
 
 ---
+🔒 Requisitos Não Funcionais e Regras de Negócio (Complemento)
+
+1.  RNF1 (Segurança e Autenticação): O sistema deve garantir que    apenas usuários com e-mail institucional válido da Universidade de  Brasília (@aluno.unb.br ou @unb.br) possam se cadastrar.
+
+---
 
 ## 📖 Exemplos de Uso (User Stories)
 
