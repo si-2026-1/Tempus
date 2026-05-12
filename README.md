@@ -100,3 +100,4 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
 * Gabriel Bismarck - 170103323
 * Bruno Gabriel - 241022460
 * Gabriel Alexandre - 241038942
+* Mike Dantas - 140064338
