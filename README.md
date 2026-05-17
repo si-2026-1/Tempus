@@ -1,6 +1,4 @@
-# ⏳ Tempus — Banco de Tempo
-
-## 🧩 Problema
+# 🧩 Problema
 
 No contexto acadêmico da Universidade de Brasília (UnB), observa-se um sistema onde alunos possuem diversas habilidades técnicas e teóricas — como escrita acadêmica, programação, tradução e ensino — mas carecem de recursos financeiros para contratar serviços de apoio.
 
@@ -11,7 +9,7 @@ Como Sistema de Informação, o **Tempus** visa mitigar as seguintes falhas do c
 
 ---
 
-## 🎯 Escopo
+# 🎯 Escopo
 
 O **Tempus** propõe um sistema de troca baseado na Teoria Geral de Sistemas, onde o "tempo" é o insumo principal.
 
@@ -26,7 +24,7 @@ O sistema será documentado como um MVP (Produto Mínimo Viável) compreendendo:
 
 ---
 
-## 👥 Stakeholders (Interessados)
+# 👥 Stakeholders (Interessados)
 
 Para o desenvolvimento deste sistema de informação, identificamos os seguintes atores principais:
 * **Alunos (Usuários):** Prestadores e tomadores de serviços.
@@ -35,12 +33,12 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
 
 ---
 
-## 🧠 Detalhes do Produto
+# 🧠 Detalhes do Produto
 
-### 🔄 Modelo de Troca
+## 🔄 Modelo de Troca
 - 1 hora = 1 crédito (Modelo igualitário, independente da complexidade da tarefa).
 
-### 🛠️ Metodologia de Desenvolvimento
+## 🛠️ Metodologia de Desenvolvimento
 [cite_start]O projeto segue as diretrizes da disciplina CIC0101[cite: 2], com foco em:
 * [cite_start]**Versionamento:** GitHub para documentação e controle de commits.
 * [cite_start]**Modelagem:** BPMN para processos e MER para dados[cite: 12, 13].
@@ -49,7 +47,7 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
 ---
 
 
-## 👨‍💻 Autores
+# 👨‍💻 Autores
 
 * Carlos Cauã - 231034304
 * Thomas Jefferson - 202033561
