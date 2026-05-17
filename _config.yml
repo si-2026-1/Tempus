@@ -1,0 +1,8 @@
+theme: "minima"
+
+header_pages:
+  - README.md
+  - docs/requesitos.md
+  - docs/epicos.md
+  - docs/modelagem.md
+  - docs/historico_de_alterações.md
