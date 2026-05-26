@@ -3,6 +3,7 @@ theme:
   name: material
 nav:
   - Requisitos: requisitos.md
+  - Histórias de Usuários: user-stories.md
   - Epics: epics.md
   - Modelagem: modelagem-dados.md
   - Histórico de Alterações: historico-de-alteracoes.md
