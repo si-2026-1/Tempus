@@ -110,9 +110,27 @@ Gabriel Alexandre - 241038942; Mike Dantas - 140064338
 \end{frame}
 
 %------------------------------------------------
-\section[Modelagem]{Modelagem}
+\section[Modelagem de Dados]{Modelagem de Dados}
 %------------------------------------------------
 
+\begin{frame}
+\frametitle{Visão Geral da Modelagem}
+\begin{itemize}
+    \item \textbf{Objetivo:} Traduzir o Backlog de Produto em um modelo conceitual relacional.
+    \item \textbf{Entidades Fortes:} \textit{Usuário} e \textit{Oferta} (existem de forma independente no ecossistema).
+    \item \textbf{Entidades Fracas:} \textit{Solicitação, Transação, Mensagem} e \textit{Avaliação} (dependentes do fluxo do serviço prestado).
+    \item \textbf{Cardinalidade:} Aplicação de leitura cruzada para garantir integridade (ex: 1 Solicitação gera no máximo 1 Transação).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Diagrama Entidade-Relacionamento (DER)}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.50\textwidth]{der-tempus.png}
+\caption{Modelo Conceitual do MVP Tempus}
+\end{figure}
+\end{frame}
 \begin{frame}
 \frametitle{Slide 5}
 \begin{figure}[htb!]
