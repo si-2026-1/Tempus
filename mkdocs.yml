@@ -4,5 +4,5 @@ theme:
 nav:
   - Requisitos: requisitos.md
   - Epics: epics.md
-  - Modelagem: modelagem_dados.md
+  - Modelagem: modelagem-dados.md
   - Histórico de Alterações: historico-de-alteracoes.md
