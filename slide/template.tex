@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+\documentclass[aspectratio=169]{beamer}
+\mode<presentation> {
+\usetheme{Madrid}
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{color,url}
+% ########## user defined
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\usepackage{calc}
+\usepackage{subfig}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage{pgf-pie}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\lstset{language=Python,basicstyle=\ttfamily,keywordstyle=\color{blue}}
+\usepackage{caption}
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title{Tempus}
+\subtitle{Sistemas de Informação 2026-1}
+
+\author[Carlos, Thomas, Gabriel B, Bruno, Gabriel A, Mike]{
+Carlos Cauã - 231034304; Thomas Jefferson - 202033561
+\newline
+Gabriel Bismarck - 170103323; Bruno Gabriel - 241022460
+\newline
+Gabriel Alexandre - 241038942; Mike Dantas - 140064338
+}
+
+\institute[UnB]{Graduação em Ciência da Computação \\ 
+    \medskip
+    {\includegraphics[scale=.25]{logo-unb}}
+    \medskip
+    \date{August 25, 2022}}% Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+% Sumário
+\begin{frame}
+\frametitle{Sumário}
+\tableofcontents
+\end{frame}
+
+%------------------------------------------------
+\section[Ideia Central]{Ideia Central}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Slide 1}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Slide 2}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Slide 3}
+
+\end{frame}
+
+%------------------------------------------------
+\section[Requisitos, Épicos e História de Usuários]{Requisitos, Épicos e Histórias de Usuários}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Slide 4}
+\begin{itemize}
+    \item Concept 1
+    \item Concept 2
+    \item Concept 3
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\section[Modelagem de Dados]{Modelagem de Dados}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Visão Geral da Modelagem}
+\begin{itemize}
+    \item \textbf{Objetivo:} Traduzir o Backlog de Produto em um modelo conceitual relacional.
+    \item \textbf{Entidades Fortes:} \textit{Usuário} e \textit{Oferta} (existem de forma independente no ecossistema).
+    \item \textbf{Entidades Fracas:} \textit{Solicitação, Transação, Mensagem} e \textit{Avaliação} (dependentes do fluxo do serviço prestado).
+    \item \textbf{Cardinalidade:} Aplicação de leitura cruzada para garantir integridade (ex: 1 Solicitação gera no máximo 1 Transação).
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Diagrama Entidade-Relacionamento (DER)}
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.50\textwidth]{der-tempus.png}
+\caption{Modelo Conceitual do MVP Tempus}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{Slide 5}
+\begin{figure}[htb!]
+\centering
+% \includegraphics[width=.83\textwidth]{figure-name}
+\caption{Figure 1}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Slide 6}
+
+% Example code block:
+\begin{lstlisting}
+code here
+\end{lstlisting}
+
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}[allowframebreaks]{References}
+\bibliographystyle{unsrt}
+\bibliography{references}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\Large{\centerline{Obrigado Pela Atenção!}}
+\Large{\centerline{Perguntas?}}
+\end{frame}
+%------------------------------------------------
+\end{document} 
