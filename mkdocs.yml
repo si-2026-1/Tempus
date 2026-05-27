@@ -7,3 +7,9 @@ nav:
   - Epics: epics.md
   - Modelagem: modelagem-dados.md
   - Histórico de Alterações: historico-de-alteracoes.md
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
