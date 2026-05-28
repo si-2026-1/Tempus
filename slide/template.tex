@@ -185,30 +185,39 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Visão Geral da Modelagem}
+\frametitle{Do Conceitual ao Físico}
 \begin{itemize}
-    \item \textbf{Objetivo:} Traduzir o Backlog de Produto em um modelo conceitual relacional.
-    \item \textbf{Entidades Fortes:} \textit{Usuário} e \textit{Oferta} (existem de forma independente no ecossistema).
-    \item \textbf{Entidades Fracas:} \textit{Solicitação, Transação, Mensagem} e \textit{Avaliação} (dependentes do fluxo do serviço prestado).
-    \item \textbf{Cardinalidade:} Aplicação de leitura cruzada para garantir integridade (ex: 1 Solicitação gera no máximo 1 Transação).
+    \item \textbf{Modelo Conceitual (DER):} Focado nas regras de negócio e na semântica do sistema.
+    \item \textbf{Modelo Físico (Diagrama de Tabelas):} Tradução para o modelo relacional, definindo tipos de dados, chaves primárias (PK) e estrangeiras (FK).
+    \item \textbf{Normalização:} Aplicação de regras para evitar redundância e garantir a integridade dos saldos de tempo.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Diagrama Entidade-Relacionamento (DER)}
+\frametitle{Modelo Conceitual - DER}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.50\textwidth]{der-tempus.png}
-\caption{Modelo Conceitual do MVP Tempus}
+\includegraphics[width=0.55\textwidth]{der-tempus.png}
+\caption{Representação das regras de negócio e relacionamentos.}
 \end{figure}
 \end{frame}
+
 \begin{frame}
-\frametitle{Slide 5}
+\frametitle{Modelo Físico - Estrutura de Tabelas}
 \begin{figure}[htb!]
 \centering
-% \includegraphics[width=.83\textwidth]{figure-name}
-\caption{Figure 1}
+\includegraphics[width=0.50\textwidth]{der-fisico-tempus.png}
+\caption{Implementação relacional com definição de chaves e tipos.}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Justificativa das Escolhas Técnicas}
+\begin{itemize}
+    \item \textbf{Entidade Fraca (Solicitação):} A \textit{Solicitação} é o ponto central que une quem pede e quem presta. Escolhida como fraca pois sua existência não faz sentido sem um Usuário e uma Oferta vinculada.
+    \item \textbf{Tabela USUARIO\_SKILL:} Criada para resolver o atributo multivalorado de competências, garantindo a \textbf{1ª Forma Normal}.
+    \item \textbf{Integridade Referencial:} O uso de Chaves Estrangeiras (FK) em \textit{Transação} e \textit{Avaliação} garante que nenhum crédito seja movido sem uma solicitação confirmada no histórico.
+\end{itemize}
 \end{frame}
 
 \begin{frame}[fragile]
