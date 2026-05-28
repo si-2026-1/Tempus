@@ -58,7 +58,12 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
 
 ## Requisitos Não Funcionais
 
-1. **RNF1 (Segurança e Autenticação)**: O sistema deve garantir que apenas usuários com e-mail institucional válido da Universidade de  Brasília (@aluno.unb.br ou @unb.br) possam se cadastrar.
+1. **RNF1 (Segurança e Autenticação):** O sistema deve garantir que apenas usuários com e-mail institucional válido da Universidade de Brasília (@aluno.unb.br ou @unb.br) possam se cadastrar.
+2. **RNF2 (Usabilidade):** O sistema deve possuir interface simples e intuitiva, permitindo que os usuários encontrem, ofereçam e solicitem serviços com facilidade.
+3. **RNF3 (Responsividade):** O sistema deve possuir interface adaptável a diferentes tamanhos de tela, como computadores, tablets e celulares.
+4. **RNF4 (Desempenho):** O sistema deve carregar páginas e informações essenciais em tempo adequado para não prejudicar a experiência do usuário.
+5. **RNF5 (Auditabilidade):** O sistema deve manter registros das transações de créditos de tempo para permitir consulta, conferência e resolução de disputas.
+6. **RNF6 (Disponibilidade):** O sistema deve estar disponível para acesso dos usuários durante os períodos de uso acadêmico.
 
 ---
 
