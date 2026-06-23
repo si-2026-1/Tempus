@@ -2,9 +2,10 @@ site_name: Tempus
 theme:
   name: material
 nav:
+  - Epics: epics.md
   - Requisitos: requisitos.md
   - Histórias de Usuários: user-stories.md
-  - Epics: epics.md
+  - Backlog: BACKLOG.md
   - Modelagem: modelagem-dados.md
   - Histórico de Alterações: historico-de-alteracoes.md
 markdown_extensions:

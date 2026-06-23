@@ -90,24 +90,19 @@ Gabriel Alexandre - 241038942; Mike Dantas - 140064338
 \end{frame}
 
 \begin{frame}
-\frametitle{Tempus - Funcionamento}
-\begin{itemize}
-    \item Banco de Tempo.
-    \item Modelo igualitário com cada crédito valendo 1 hora.
-\end{itemize}
-\end{frame}
+\frametitle{Tempus — Funcionamento}
 
-%------------------------------------------------
-\section[Requisitos, Épicos e História de Usuários]{Requisitos, Épicos e Histórias de Usuários}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Slide 4}
 \begin{itemize}
-    \item Concept 1
-    \item Concept 2
-    \item Concept 3
+    \item O sistema funciona como um banco de tempo, onde usuários trocam serviços entre si.
+
+    \item Cada serviço é contabilizado em créditos, seguindo o modelo:
+    \begin{itemize}
+        \item 1 hora de serviço = 1 crédito
+    \end{itemize}
+
+    \item Dessa forma, usuários podem oferecer suas habilidades e utilizar créditos para aprender ou receber ajuda em outras áreas.
 \end{itemize}
+
 \end{frame}
 
 % --- BACKLOG: VISÃO GERAL DOS ÉPICOS  (BISMARCK)---
@@ -126,45 +121,259 @@ Gabriel Alexandre - 241038942; Mike Dantas - 140064338
 \end{itemize}
 \end{frame}
 
+%------- User Stories (CARLOS) ---------------------
+\section[User Stories]{User Stories}
+
+
+\begin{frame}
+\frametitle{Histórias de Usuário}
+
+\begin{block}{O que são?}
+User Stories descrevem funcionalidades do sistema a partir da perspectiva do usuário, focando em suas necessidades e objetivos.
+\end{block}
+
+\begin{itemize}
+    \item Escritas no formato: \textit{"Como [usuário], quero [ação], para [objetivo]"}
+    \item Representam valor entregue ao usuário
+    \item Servem como base para o desenvolvimento e priorização
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Histórias de Usuário}
+
+\small
+\begin{itemize}
+
+\item \textbf{US01:} Como aluno da UnB, desejo me cadastrar com e-mail institucional para garantir segurança.
+\item \textbf{US02:} Como usuário, quero cadastrar minhas skills para participar das trocas e ganhar experiência.
+
+\item \textbf{US03:} Como usuário, quero publicar uma oferta no mural para mostrar minhas habilidades.
+
+\item \textbf{US04:} Como prestador, quero buscar e filtrar ofertas para encontrar oportunidades.
+
+\item \textbf{US05:} Como usuário, quero solicitar serviços para resolver minhas necessidades.
+
+\item \textbf{US06:} Como usuário, quero aceitar ou recusar solicitações e concluir trocas.
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Histórias de Usuário}
+
+\small
+\begin{itemize}
+
+\item \textbf{US07:} Como usuário, quero gerenciar meu saldo para realizar e ofertar trocas.
+
+\item \textbf{US08:} Como usuário, quero visualizar meu histórico para acompanhar serviços e ganhos.
+
+\item \textbf{US09:} Como usuário, quero avaliar serviços recebidos para compartilhar minha experiência.
+
+\item \textbf{US10:} Como usuário, quero abrir disputas e ter minha solicitação analisada pela administração para manter um ambiente justo.
+
+\item \textbf{US11:} Como usuário, quero me comunicar com outros participantes para alinhar a troca.
+
+\end{itemize}
+
+\end{frame}
+
+
+
+%------------------------------------------------
+\section[Requisitos]{Requisitos}
+%------------------------------------------------
+%------------------------------------------------
+\begin{frame}
+\frametitle{Requisitos Funcionais}
+
+\begin{block}{O que são?}
+Requisitos funcionais descrevem as funcionalidades e serviços que o sistema deve oferecer aos usuários, definindo as ações e comportamentos esperados da plataforma.
+\end{block}
+
+\begin{itemize}
+\item Representam as principais operações do sistema.
+
+\item Definem como os usuários irão interagir com a plataforma.
+
+\item Servem como base para o desenvolvimento das funcionalidades do projeto.
+
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Requisitos Funcionais}
+
+\small
+
+\textbf{1. Cadastro de Perfil e Skills}
+Permite que o usuário informe habilidades, serviços oferecidos e demandas desejadas.
+
+\vspace{0.3cm}
+
+\textbf{2. Mural de Ofertas/Serviços}
+Exibe os serviços disponíveis organizados por categorias, facilitando a busca.
+
+\vspace{0.3cm}
+
+\textbf{3. Sistema de Agendamento/Solicitação}
+Gerencia pedidos de serviço, negociações de horário e confirmações entre usuários.
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Requisitos Funcionais}
+
+\small
+
+\textbf{4. Carteira de Créditos (Time Wallet)}
+Realiza o controle automático do saldo de horas/créditos dos usuários.
+
+\vspace{0.3cm}
+
+\textbf{5. Histórico de Transações}
+Armazena informações sobre serviços realizados, participantes e movimentações de créditos.
+
+\vspace{0.3cm}
+
+\textbf{6. Sistema de Avaliação e Feedback}
+Permite avaliações por notas e comentários para construção da reputação dos usuários.
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Requisitos Funcionais}
+
+\small
+
+\textbf{7. Chat Interno}
+Disponibiliza comunicação direta para alinhamento de serviços e horários.
+
+\vspace{0.3cm}
+
+\textbf{8. Painel de Disputas/Moderação}
+Auxilia na resolução de conflitos, reclamações e ajustes de créditos entre usuários.
+
+\vspace{0.5cm}
+
+\begin{block}{Objetivo Geral}
+Garantir uma plataforma organizada, segura e colaborativa para troca de serviços baseada em tempo.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Requisitos Não Funcionais}
+
+\begin{itemize}
+    \item \textbf{Segurança:} Cadastro permitido apenas com e-mails institucionais da UnB (\textit{@aluno.unb.br} e \textit{@unb.br}).
+
+    \item \textbf{Usabilidade:} Interface simples e intuitiva para facilitar o uso da plataforma.
+
+    \item \textbf{Responsividade:} Compatibilidade com computadores, tablets e celulares.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Requisitos Não Funcionais}
+
+\begin{itemize}
+    \item \textbf{Desempenho:} Carregamento rápido das páginas e informações essenciais.
+
+    \item \textbf{Auditabilidade:} Registro das transações de créditos para consultas e resolução de disputas.
+
+    \item \textbf{Disponibilidade:} Sistema disponível durante os períodos de uso acadêmico.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Requisitos Restritivos}
+
+\begin{block}{O que são?}
+Requisitos restritivos são limitações, regras ou condições externas que influenciam a forma como o sistema será planejado, desenvolvido e documentado.
+\end{block}
+
+\begin{itemize}
+    \item Diferem dos requisitos funcionais, pois não descrevem diretamente uma funcionalidade do sistema.
+    
+    \item Diferem dos requisitos não funcionais, pois não descrevem apenas critérios de qualidade, como desempenho, usabilidade ou disponibilidade.
+    
+    \item No Tempus, delimitam o contexto acadêmico, o público-alvo, a unidade de troca, as ferramentas, a documentação e as condições de entrega.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Requisitos Restritivos do Tempus}
+
+\small
+\begin{itemize}
+    \item \textbf{RR1:} Considerar o contexto acadêmico da Universidade de Brasília.
+    \item \textbf{RR2:} Restringir o cadastro a usuários da comunidade universitária da UnB, por e-mail institucional.
+    \item \textbf{RR3:} Utilizar a hora como unidade de troca entre usuários.
+    \item \textbf{RR4:} Documentar o sistema no repositório GitHub Tempus da organização \textit{si-2026-1}.
+    \item \textbf{RR5:} Permitir representação da modelagem por MER/DER.
+    \item \textbf{RR6:} Planejar o sistema como aplicação web.
+    \item \textbf{RR7:} Utilizar ferramentas compatíveis com desenvolvimento web.
+    \item \textbf{RR8:} Ser compatível com futura implementação em banco de dados relacional.
+    \item \textbf{RR9:} Permitir acesso por navegadores modernos, evitando instalação local.
+    \item \textbf{RR10:} Respeitar os prazos definidos pela disciplina.
+\end{itemize}
+
+\end{frame}
+
 %------------------------------------------------
 \section[Modelagem de Dados]{Modelagem de Dados}
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Visão Geral da Modelagem}
+\frametitle{Do Conceitual ao Físico}
 \begin{itemize}
-    \item \textbf{Objetivo:} Traduzir o Backlog de Produto em um modelo conceitual relacional.
-    \item \textbf{Entidades Fortes:} \textit{Usuário} e \textit{Oferta} (existem de forma independente no ecossistema).
-    \item \textbf{Entidades Fracas:} \textit{Solicitação, Transação, Mensagem} e \textit{Avaliação} (dependentes do fluxo do serviço prestado).
-    \item \textbf{Cardinalidade:} Aplicação de leitura cruzada para garantir integridade (ex: 1 Solicitação gera no máximo 1 Transação).
+    \item \textbf{Modelo Conceitual (DER):} Focado nas regras de negócio e na semântica do sistema.
+    \item \textbf{Modelo Físico (Diagrama de Tabelas):} Tradução para o modelo relacional, definindo tipos de dados, chaves primárias (PK) e estrangeiras (FK).
+    \item \textbf{Normalização:} Aplicação de regras para evitar redundância e garantir a integridade dos saldos de tempo.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Diagrama Entidade-Relacionamento (DER)}
+\frametitle{Modelo Conceitual - DER}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.50\textwidth]{der-tempus.png}
-\caption{Modelo Conceitual do MVP Tempus}
+\includegraphics[width=0.55\textwidth]{der-tempus.png}
+\caption{Representação das regras de negócio e relacionamentos.}
 \end{figure}
 \end{frame}
+
 \begin{frame}
-\frametitle{Slide 5}
+\frametitle{Modelo Físico - Estrutura de Tabelas}
 \begin{figure}[htb!]
 \centering
-% \includegraphics[width=.83\textwidth]{figure-name}
-\caption{Figure 1}
+\includegraphics[width=0.50\textwidth]{der-fisico-tempus.png}
+\caption{Implementação relacional com definição de chaves e tipos.}
 \end{figure}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Slide 6}
-
-% Example code block:
-\begin{lstlisting}
-code here
-\end{lstlisting}
-
+\begin{frame}
+\frametitle{Justificativa das Escolhas Técnicas}
+\begin{itemize}
+    \item \textbf{Entidade Fraca (Solicitação):} A \textit{Solicitação} é o ponto central que une quem pede e quem presta. Escolhida como fraca pois sua existência não faz sentido sem um Usuário e uma Oferta vinculada.
+    \item \textbf{Tabela USUARIO\_SKILL:} Criada para resolver o atributo multivalorado de competências, garantindo a \textbf{1ª Forma Normal}.
+    \item \textbf{Integridade Referencial:} O uso de Chaves Estrangeiras (FK) em \textit{Transação} e \textit{Avaliação} garante que nenhum crédito seja movido sem uma solicitação confirmada no histórico.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
