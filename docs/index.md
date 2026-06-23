@@ -1,17 +1,19 @@
-# ⏳ Tempus — Banco de Tempo
+# Tempus — Banco de Tempo
 
-## 🧩 Problema
+## Problema
 
-No contexto acadêmico da Universidade de Brasília (UnB), observa-se um sistema onde alunos possuem diversas habilidades técnicas e teóricas — como escrita acadêmica, programação, tradução e ensino — mas carecem de recursos financeiros para contratar serviços de apoio.
+No contexto acadêmico da Universidade de Brasília (UnB), observa-se um sistema onde alunos possuem diversas habilidades técnicas e teóricas — como escrita acadêmica, programação, tradução e ensino — mas carecem de recursos financeiros para contratar serviços de apoio e conseguir experiência prática nessas habilidades.
 
 Como Sistema de Informação, o **Tempus** visa mitigar as seguintes falhas do cenário atual:
+
 - Existência de competências ociosas (oferta).
 - Necessidade de suporte especializado não atendida (demanda).
 - Ausência de um meio de troca eficiente e auditável que dispense o uso de moeda fiduciária.
+- Escassez de oportunidades acessíveis para aquisição de experiência prática em contextos reais de prestação de serviços.
 
 ---
 
-## 🎯 Escopo
+## Escopo
 
 O **Tempus** propõe um sistema de troca baseado na Teoria Geral de Sistemas, onde o "tempo" é o insumo principal.
 
@@ -26,7 +28,7 @@ O sistema será documentado como um MVP (Produto Mínimo Viável) compreendendo:
 
 ---
 
-## 👥 Stakeholders (Interessados)
+## Stakeholders (Interessados)
 
 Para o desenvolvimento deste sistema de informação, identificamos os seguintes atores principais:
 * **Alunos (Usuários):** Prestadores e tomadores de serviços.
@@ -35,15 +37,7 @@ Para o desenvolvimento deste sistema de informação, identificamos os seguintes
 
 ---
 
-## 🛠️ Metodologia de Desenvolvimento
-[cite_start]O projeto segue as diretrizes da disciplina CIC0101[cite: 2], com foco em:
-* [cite_start]**Versionamento:** GitHub para documentação e controle de commits.
-* [cite_start]**Modelagem:** BPMN para processos e MER para dados[cite: 12, 13].
-* [cite_start]**Prototipagem:** Figma para a entrega T2[cite: 28].
-
----
-
-## 👨‍💻 Autores
+## Autores
 
 * Carlos Cauã - 231034304
 * Thomas Jefferson - 202033561
