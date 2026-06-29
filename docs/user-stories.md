@@ -1,110 +1,136 @@
 # User Stories — Tempus
 
-User Stories alinhadas aos épicos e requisitos funcionais refatorados.
+As User Stories representam as principais funcionalidades do Tempus sob a perspectiva do usuário. Elas estão organizadas por **Épicos**, que agrupam funcionalidades relacionadas do sistema.
 
-\---
+---
 
-## Épico 1 — Gestão de Identidade e Perfil
+# Épico 1 — Cadastro e Perfil
 
-### Cadastro de Perfil e Skills
+## US01 — Cadastro institucional
 
-**US01 — Cadastro institucional**
+> Como aluno da UnB, desejo cadastrar-me utilizando meu e-mail institucional para utilizar a plataforma com segurança.
 
-> Como aluno da UnB, quero me cadastrar com e-mail institucional para acessar a plataforma com vínculo validado.
+**Regras de negócio**
 
-* Apenas `@aluno.unb.br` e `@unb.br`; sem duplicatas (RNF1 / RR2)
+* Apenas e-mails institucionais (`@aluno.unb.br` e `@unb.br`) são aceitos.
+* Não é permitido cadastrar e-mails duplicados.
 
-**US02 — Definição de oferta e demanda**
+---
 
-> Como usuário, quero cadastrar minhas skills e necessidades para participar das trocas.
+## US02 — Cadastro de habilidades
 
-* Múltiplas habilidades e demandas por perfil, vinculadas a categorias
+> Como usuário, desejo cadastrar minhas habilidades para que outros estudantes encontrem meus serviços.
 
-\---
+**Regras de negócio**
 
-## Épico 2 — Marketplace de Competências
+* O usuário pode cadastrar múltiplas habilidades.
+* As habilidades podem ser editadas ou removidas posteriormente.
 
-### Mural de Ofertas/Serviços
+---
 
-**US03 — Publicação de oferta**
+# Épico 2 — Marketplace de Serviços
 
-> Como usuário, quero publicar uma oferta de serviço no mural para disponibilizar minhas competências.
+## US03 — Publicação de ofertas
 
-* Título, descrição, duração estimada e categoria (Acadêmico, Técnico, Consultoria, Manutenção)
+> Como usuário, desejo publicar ofertas de serviços para disponibilizar minhas habilidades.
 
-**US04 — Busca e visualização de ofertas**
+**Regras de negócio**
 
-> Como estudante, quero buscar e filtrar ofertas no mural para encontrar serviços relevantes.
+* A oferta deve possuir título, descrição e categoria.
+* Cada oferta pode informar a quantidade de créditos desejada.
 
-* Busca textual e filtros por categoria com resultados dinâmicos
+---
 
-\---
+## US04 — Busca de ofertas
 
-## Épico 3 — Ciclo de Vida da Troca
+> Como prestador, desejo buscar e filtrar ofertas para encontrar oportunidades compatíveis.
 
-### Sistema de Agendamento/Solicitação
+**Regras de negócio**
 
-**US05 — Solicitação de serviço**
+* Permitir pesquisa por palavra-chave.
+* Permitir filtros por categoria.
 
-> Como usuário, quero solicitar um serviço publicado para iniciar uma troca.
+---
 
-* Saldo suficiente exigido (RN2); prestador notificado
+# Épico 3 — Execução da Troca
 
-**US06 — Aceite e finalização**
+## US05 — Solicitação de serviço
 
-> Como prestador, quero aceitar/recusar solicitações e confirmar a conclusão do serviço.
+> Como usuário, desejo solicitar um serviço para contratar outro estudante.
 
-* Confirmação mútua obrigatória; créditos liberados após ambas as partes confirmarem
+**Regras de negócio**
 
-\---
+* O sistema registra a solicitação.
+* O prestador é notificado sobre o pedido.
 
-## Épico 4 — Carteira do Tempo
+---
 
-### Carteira de Créditos (Time Wallet)
+## US06 — Gerenciamento de solicitações
 
-**US07 — Gestão de saldo**
+> Como prestador, desejo aceitar ou recusar solicitações para gerenciar meus atendimentos.
 
-> Como usuário, quero visualizar e gerenciar meu saldo de créditos para acompanhar minhas horas.
+**Regras de negócio**
 
-* 1 hora = 1 crédito; saldo inicial ao cadastro (RN1); saldo nunca negativo (RN2)
+* O status da solicitação deve ser atualizado automaticamente.
+* O solicitante deve ser informado da decisão.
 
-### Histórico de Transações
+---
 
-**US08 — Extrato de transações**
+# Épico 4 — Créditos e Histórico
 
-> Como usuário, quero consultar meu histórico para acompanhar serviços prestados e recebidos.
+## US07 — Gerenciamento de créditos
 
-* Data, participantes e créditos movimentados por transação
+> Como usuário, desejo acompanhar meu saldo de créditos para controlar minhas trocas.
 
-\---
+**Regras de negócio**
 
-## Épico 5 — Confiança e Governança
+* O saldo deve refletir todas as transações realizadas.
+* O histórico de movimentações deve permanecer disponível para consulta.
 
-### Sistema de Avaliação e Feedback
+---
 
-**US09 — Avaliação pós-serviço**
+## US08 — Histórico de serviços
 
-> Como usuário, quero avaliar um serviço recebido com estrelas e comentário.
+> Como usuário, desejo visualizar meu histórico para acompanhar serviços realizados.
 
-* Apenas participantes da troca podem avaliar
+**Regras de negócio**
 
-### Painel de Disputas/Moderação
+* Exibir serviços prestados e solicitados.
+* Informar os créditos envolvidos em cada transação.
 
-**US10 — Abertura e gestão de disputas**
+---
 
-> Como usuário, quero abrir uma disputa; como administrador, quero analisá-la e agir.
+# Épico 5 — Avaliações e Comunicação
 
-* Usuário informa motivo; administrador visualiza histórico e registra ações
+## US09 — Avaliação de serviços
 
-\---
+> Como usuário, desejo avaliar serviços concluídos para compartilhar minha experiência.
 
-## Épico 6 — Colaboração Direta
+**Regras de negócio**
 
-### Chat Interno
+* Apenas participantes da troca podem realizar avaliações.
+* A avaliação pode conter nota e comentário.
 
-**US11 — Chat de negociação**
+---
 
-> Como usuário, quero conversar com outro participante para alinhar escopo e horários.
+## US10 — Comunicação entre usuários
 
-* Mensagens em tempo real com histórico armazenado
+> Como usuário, desejo conversar com outros participantes para combinar os detalhes da troca.
 
+**Regras de negócio**
+
+* O histórico das mensagens deve permanecer disponível.
+* Os usuários devem ser notificados sobre novas mensagens.
+
+---
+
+# Épico 6 — Administração
+
+## US11 — Abertura de disputas
+
+> Como usuário, desejo abrir disputas para que a administração resolva conflitos de forma justa.
+
+**Regras de negócio**
+
+* O usuário deve informar o motivo da disputa.
+* A administração poderá acompanhar e analisar o caso.
