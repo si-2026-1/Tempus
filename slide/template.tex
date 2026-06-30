@@ -122,30 +122,20 @@ Gabriel Alexandre - 241038942; Mike Dantas - 140064338
 \end{frame}
 
 %------- User Stories (CARLOS) ---------------------
+\section[User Stories]{User Stories}
 
-\begin{frame} \frametitle{Histórias de Usuário} \begin{block}{Definição} As Histórias de Usuário (User Stories) descrevem funcionalidades do sistema sob a perspectiva do usuário, representando valor de negócio e servindo como base para o planejamento das funcionalidades do projeto. \end{block} \begin{itemize} \item Escritas no formato: \textit{"Como [usuário], desejo [funcionalidade], para [benefício]."} \item Organizadas por \textbf{Épicos}, que agrupam funcionalidades relacionadas. \end{itemize} \end{frame}
-
-\small
 
 \begin{frame}
 \frametitle{Histórias de Usuário}
 
-\textbf{Épico 1 -- Cadastro e Perfil}
-\begin{itemize}
-    \item \textbf{US01:} Como aluno da UnB, desejo cadastrar-me com e-mail institucional para utilizar a plataforma com segurança.
-    \item \textbf{US02:} Como usuário, desejo cadastrar minhas habilidades para que outros estudantes encontrem meus serviços.
-\end{itemize}
+\begin{block}{O que são?}
+User Stories descrevem funcionalidades do sistema a partir da perspectiva do usuário, focando em suas necessidades e objetivos.
+\end{block}
 
-\textbf{Épico 2 -- Marketplace de Serviços}
 \begin{itemize}
-    \item \textbf{US03:} Como usuário, desejo publicar ofertas de serviços para disponibilizar minhas habilidades.
-    \item \textbf{US04:} Como prestador, desejo buscar e filtrar ofertas para encontrar oportunidades compatíveis.
-\end{itemize}
-
-\textbf{Épico 3 -- Execução da Troca}
-\begin{itemize}
-    \item \textbf{US05:} Como usuário, desejo solicitar um serviço para contratar outro estudante.
-    \item \textbf{US06:} Como prestador, desejo aceitar ou recusar solicitações para gerenciar meus atendimentos.
+    \item Escritas no formato: \textit{"Como [usuário], quero [ação], para [objetivo]"}
+    \item Representam valor entregue ao usuário
+    \item Servem como base para o desenvolvimento e priorização
 \end{itemize}
 
 \end{frame}
@@ -154,25 +144,44 @@ Gabriel Alexandre - 241038942; Mike Dantas - 140064338
 \frametitle{Histórias de Usuário}
 
 \small
-
-\textbf{Épico 4 -- Créditos e Histórico}
 \begin{itemize}
-    \item \textbf{US07:} Como usuário, desejo acompanhar meu saldo de créditos para controlar minhas trocas.
-    \item \textbf{US08:} Como usuário, desejo visualizar meu histórico para acompanhar serviços realizados.
-\end{itemize}
 
-\textbf{Épico 5 -- Avaliações e Comunicação}
-\begin{itemize}
-    \item \textbf{US09:} Como usuário, desejo avaliar serviços concluídos para compartilhar minha experiência.
-    \item \textbf{US10:} Como usuário, desejo conversar com outros participantes para combinar os detalhes da troca.
-\end{itemize}
+\item \textbf{US01:} Como aluno da UnB, desejo me cadastrar com e-mail institucional para garantir segurança.
+\item \textbf{US02:} Como usuário, quero cadastrar minhas skills para participar das trocas e ganhar experiência.
 
-\textbf{Épico 6 -- Administração}
-\begin{itemize}
-    \item \textbf{US11:} Como usuário, desejo abrir disputas para que a administração resolva conflitos de forma justa.
+\item \textbf{US03:} Como usuário, quero publicar uma oferta no mural para mostrar minhas habilidades.
+
+\item \textbf{US04:} Como prestador, quero buscar e filtrar ofertas para encontrar oportunidades.
+
+\item \textbf{US05:} Como usuário, quero solicitar serviços para resolver minhas necessidades.
+
+\item \textbf{US06:} Como usuário, quero aceitar ou recusar solicitações e concluir trocas.
+
 \end{itemize}
 
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Histórias de Usuário}
+
+\small
+\begin{itemize}
+
+\item \textbf{US07:} Como usuário, quero gerenciar meu saldo para realizar e ofertar trocas.
+
+\item \textbf{US08:} Como usuário, quero visualizar meu histórico para acompanhar serviços e ganhos.
+
+\item \textbf{US09:} Como usuário, quero avaliar serviços recebidos para compartilhar minha experiência.
+
+\item \textbf{US10:} Como usuário, quero abrir disputas e ter minha solicitação analisada pela administração para manter um ambiente justo.
+
+\item \textbf{US11:} Como usuário, quero me comunicar com outros participantes para alinhar a troca.
+
+\end{itemize}
+
+\end{frame}
+
 
 
 %------------------------------------------------
@@ -328,7 +337,7 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 \end{frame}
 
 %------------------------------------------------
-\section[Modelagem de Dados]{Modelagem de Dados}
+\section[Modelagem e Prototipação]{Modelagem e Prototipação}
 %------------------------------------------------
 
 \begin{frame}
@@ -344,7 +353,7 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 \frametitle{Modelo Conceitual - DER}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.55\textwidth]{der-tempus.png}
+\includegraphics[width=0.52\textwidth]{der-tempus.png}
 \caption{Representação das regras de negócio e relacionamentos.}
 \end{figure}
 \end{frame}
@@ -353,24 +362,39 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 \frametitle{Modelo Físico - Estrutura de Tabelas}
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.50\textwidth]{der-fisico-tempus.png}
+\includegraphics[width=0.48\textwidth]{der-fisico-tempus.png}
 \caption{Implementação relacional com definição de chaves e tipos.}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Justificativa das Escolhas Técnicas}
-\begin{itemize}
-    \item \textbf{Entidade Fraca (Solicitação):} A \textit{Solicitação} é o ponto central que une quem pede e quem presta. Escolhida como fraca pois sua existência não faz sentido sem um Usuário e uma Oferta vinculada.
-    \item \textbf{Tabela USUARIO\_SKILL:} Criada para resolver o atributo multivalorado de competências, garantindo a \textbf{1ª Forma Normal}.
-    \item \textbf{Integridade Referencial:} O uso de Chaves Estrangeiras (FK) em \textit{Transação} e \textit{Avaliação} garante que nenhum crédito seja movido sem uma solicitação confirmada no histórico.
-\end{itemize}
+\frametitle{Protótipo: Mural de Ofertas}
+
+\begin{figure}
+\centering
+
+\begin{minipage}{0.39\textwidth}
+\centering
+\includegraphics[width=\linewidth]{mural-ofertas-1.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.39\textwidth}
+\centering
+\includegraphics[width=\linewidth]{mural-ofertas-2.png}
+\end{minipage}
+
+\caption{Interfaces do Marketplace desenvolvidas no Figma.}
+\end{figure}
+
 \end{frame}
 
-%------------------------------------------------
-\begin{frame}[allowframebreaks]{References}
-\bibliographystyle{unsrt}
-\bibliography{references}
+\begin{frame}
+\frametitle{Conexão: Protótipo, Requisitos e Dados}
+\begin{itemize}
+    \item \textbf{RF04 e RF05 (Filtros e Busca):} A barra de pesquisa e botões interagem com a tabela \textit{OFERTA}, filtrando pelo atributo \texttt{categoria}.
+    \item \textbf{RF06 (Mural Ativo):} Os cartões cruzam dados da \textit{OFERTA} com o \textit{USUARIO} (através da FK \texttt{email\_publicador}) para exibir o nome do prestador.
+    \item \textbf{RF07 (Solicitação de Serviço):} O botão "Solicitar" é o gatilho que cria uma nova instância na entidade fraca \textit{SOLICITACAO}, unindo quem pede ao serviço ofertado.
+\end{itemize}
 \end{frame}
 
 %------------------------------------------------
@@ -379,4 +403,4 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 \Large{\centerline{Perguntas?}}
 \end{frame}
 %------------------------------------------------
-\end{document} 
+\end{document}
