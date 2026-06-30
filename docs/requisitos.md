@@ -1,23 +1,4 @@
-## Requisitos Funcionais
-
-1.  **Cadastro de Perfil e Skills**
-    * O usuário define sua oferta (skills) e sua demanda (o que precisa).
-2.  **Mural de Ofertas/Serviços**
-    * Listagem categorizada (Acadêmico, Técnico, Consultoria, Manutenção).
-3.  **Sistema de Agendamento/Solicitação**
-    * Fluxo de solicitação e confirmação mútua entre as partes.
-4.  **Carteira de Créditos (Time Wallet)**
-    * Gestão automatizada do saldo de horas do usuário.
-5.  **Histórico de Transações**
-    * Registro detalhado de interações e durações dos serviços.
-6.  **Sistema de Avaliação e Feedback**
-    * Reputação baseada em estrelas e comentários pós-serviço.
-7.  **Chat Interno**
-    * Canal direto para negociação de escopo e horários.
-8.  **Painel de Disputas/Moderação**
-    * Interface para resolução de problemas e ajustes de créditos.
-
----
+# Requisitos
 
 ## Requisitos Não Funcionais
 

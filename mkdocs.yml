@@ -3,9 +3,10 @@ theme:
   name: material
 nav:
   - Epics: epics.md
+  - Backlog: BACKLOG.md
   - Requisitos: requisitos.md
   - Histórias de Usuários: user-stories.md
-  - Backlog: BACKLOG.md
+  - Prototipação: prototipacao.md
   - Modelagem: modelagem-dados.md
   - Histórico de Alterações: historico-de-alteracoes.md
 markdown_extensions:
