@@ -460,6 +460,54 @@ Requisitos restritivos são limitações, regras ou condições externas que inf
 \vfill
 \end{frame}
 
+
+% Registro 
+\begin{frame}
+\frametitle{Entrando no sistema: Registro}
+\small
+\textbf{Épico 1 -- Gestão de Identidade e Perfil (US01)}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+        \centering
+        % Redimensionado para caber perfeitamente ao lado do texto
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{registro-tempus-v2.JPG}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \textbf{Validação da Tela de Cadastro:}
+        \begin{itemize}
+            \item Valida o \textbf{RNF (Segurança)}, restringindo a criação de conta apenas para e-mails institucionais (\textit{@aluno.unb.br} ou \textit{@unb.br}).
+            \item Garante o fluxo inicial da \textbf{US01}, permitindo que o aluno insira seus dados básicos com segurança.
+        \end{itemize}
+    \end{column}
+\end{columns}
+\end{frame}
+
+% Login
+\begin{frame}
+\frametitle{Entrando no sistema: Login}
+\small
+\textbf{Épico 1 -- Gestão de Identidade e Perfil (US01)}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+        \centering
+        % Redimensionado para caber perfeitamente ao lado do texto
+        \includegraphics[width=\linewidth,height=0.6\textheight,keepaspectratio]{login-tempus-v2.JPG}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \textbf{Validação da Tela de Login:}
+        \begin{itemize}
+            \item Interface de autenticação direta para usuários já cadastrados.
+            \item Conecta-se à tabela \textit{USUARIO} para validar as credenciais criptografadas antes de liberar o acesso ao \textit{Tempus}.
+        \end{itemize}
+    \end{column}
+\end{columns}
+\end{frame}
+
+
 \begin{frame} 
 
 \frametitle{Protótipo: Interface -- Minhas Ofertas} 
