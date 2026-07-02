@@ -8,7 +8,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US01 — Cadastro institucional
 
-> Como aluno da UnB, desejo cadastrar-me utilizando meu e-mail institucional para utilizar a plataforma com segurança.
+> Como aluno da UnB, quero criar uma conta utilizando meu e-mail institucional, para acessar a plataforma de forma segura e comprovar meu vínculo com a universidade.
 
 **Regras de negócio**
 
@@ -19,7 +19,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US02 — Cadastro de habilidades
 
-> Como usuário, desejo cadastrar minhas habilidades para que outros estudantes encontrem meus serviços.
+> Como usuário, quero cadastrar minhas habilidades e competências, para que outros estudantes possam encontrar e contratar meus serviços.
 
 **Regras de negócio**
 
@@ -32,7 +32,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US03 — Publicação de ofertas
 
-> Como usuário, desejo publicar ofertas de serviços para disponibilizar minhas habilidades.
+> Como usuário, quero publicar uma oferta de serviço, para disponibilizar minhas habilidades para outros estudantes.
 
 **Regras de negócio**
 
@@ -43,7 +43,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US04 — Busca de ofertas
 
-> Como prestador, desejo buscar e filtrar ofertas para encontrar oportunidades compatíveis.
+> Como prestador de serviços, quero pesquisar ofertas disponíveis, para encontrar oportunidades compatíveis com minhas habilidades.
 
 **Regras de negócio**
 
@@ -56,7 +56,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US05 — Solicitação de serviço
 
-> Como usuário, desejo solicitar um serviço para contratar outro estudante.
+> Como usuário, quero solicitar um serviço anunciado, para iniciar uma troca de serviços com outro estudante.
 
 **Regras de negócio**
 
@@ -67,7 +67,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US06 — Gerenciamento de solicitações
 
-> Como prestador, desejo aceitar ou recusar solicitações para gerenciar meus atendimentos.
+> Como prestador, quero aceitar ou recusar solicitações recebidas, para controlar meus atendimentos.
 
 **Regras de negócio**
 
@@ -80,7 +80,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US07 — Gerenciamento de créditos
 
-> Como usuário, desejo acompanhar meu saldo de créditos para controlar minhas trocas.
+> Como usuário, quero acompanhar meu saldo de créditos, para controlar minhas trocas realizadas na plataforma.
 
 **Regras de negócio**
 
@@ -91,7 +91,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US08 — Histórico de serviços
 
-> Como usuário, desejo visualizar meu histórico para acompanhar serviços realizados.
+> Como usuário, quero consultar meu histórico de serviços, para acompanhar todas as trocas realizadas.
 
 **Regras de negócio**
 
@@ -104,7 +104,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US09 — Avaliação de serviços
 
-> Como usuário, desejo avaliar serviços concluídos para compartilhar minha experiência.
+> Como usuário, quero avaliar um serviço concluído, para compartilhar minha experiência e contribuir para a reputação dos participantes.
 
 **Regras de negócio**
 
@@ -115,7 +115,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US10 — Comunicação entre usuários
 
-> Como usuário, desejo conversar com outros participantes para combinar os detalhes da troca.
+> Como usuário, quero trocar mensagens com outro participante, para combinar os detalhes da prestação do serviço.
 
 **Regras de negócio**
 
@@ -128,7 +128,7 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 ## US11 — Abertura de disputas
 
-> Como usuário, desejo abrir disputas para que a administração resolva conflitos de forma justa.
+> Como usuário, quero abrir uma disputa quando ocorrer um problema na troca, para solicitar a mediação da administração.
 
 **Regras de negócio**
 
