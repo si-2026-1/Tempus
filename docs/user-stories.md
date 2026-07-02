@@ -15,6 +15,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 * Apenas e-mails institucionais (`@aluno.unb.br` e `@unb.br`) são aceitos.
 * Não é permitido cadastrar e-mails duplicados.
 
+**Critérios de aceitação**
+* Dado um e-mail institucional válido, o sistema deve permitir o cadastro.
+* Dado um e-mail fora dos domínios permitidos, o sistema deve impedir o cadastro e informar o motivo.
+* Caso o e-mail já esteja cadastrado, o sistema deve exibir uma mensagem de erro.
+
 ---
 
 ## US02 — Cadastro de habilidades
@@ -25,6 +30,12 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * O usuário pode cadastrar múltiplas habilidades.
 * As habilidades podem ser editadas ou removidas posteriormente.
+
+**Critérios de aceitação**
+* O sistema deve permitir adicionar novas habilidades.
+* O sistema deve permitir editar uma habilidade existente.
+* O sistema deve permitir excluir uma habilidade.
+* As alterações devem ser refletidas imediatamente no perfil.
 
 ---
 
@@ -39,6 +50,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 * A oferta deve possuir título, descrição e categoria.
 * Cada oferta pode informar a quantidade de créditos desejada.
 
+**Critérios de aceitação**
+* O sistema não deve permitir publicar ofertas incompletas.
+* Após publicada, a oferta deve ficar disponível nas pesquisas.
+* O usuário pode editar ou remover a oferta.
+
 ---
 
 ## US04 — Busca de ofertas
@@ -49,6 +65,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * Permitir pesquisa por palavra-chave.
 * Permitir filtros por categoria.
+
+**Critérios de aceitação**
+* O sistema deve retornar resultados compatíveis com o termo pesquisado.
+* Os filtros devem reduzir os resultados corretamente.
+* Caso não existam ofertas, o sistema deve informar ao usuário.
 
 ---
 
@@ -63,6 +84,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 * O sistema registra a solicitação.
 * O prestador é notificado sobre o pedido.
 
+**Critérios de aceitação**
+* O sistema deve registrar a solicitação.
+* O prestador deve ser notificado.
+* O status inicial deve ser "Pendente".
+
 ---
 
 ## US06 — Gerenciamento de solicitações
@@ -73,6 +99,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * O status da solicitação deve ser atualizado automaticamente.
 * O solicitante deve ser informado da decisão.
+
+**Critérios de aceitação**
+* Ao aceitar, a solicitação muda para "Aceita".
+* Ao recusar, muda para "Recusada".
+* O solicitante recebe a atualização.
 
 ---
 
@@ -87,6 +118,10 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 * O saldo deve refletir todas as transações realizadas.
 * O histórico de movimentações deve permanecer disponível para consulta.
 
+**Critérios de aceitação**
+* O saldo deve refletir todas as transações.
+* O histórico deve permanecer disponível para consulta.
+
 ---
 
 ## US08 — Histórico de serviços
@@ -97,6 +132,10 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * Exibir serviços prestados e solicitados.
 * Informar os créditos envolvidos em cada transação.
+
+**Critérios de aceitação**
+* O histórico deve listar todas as trocas concluídas.
+* O usuário pode visualizar os detalhes de cada serviço.
 
 ---
 
@@ -111,6 +150,11 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 * Apenas participantes da troca podem realizar avaliações.
 * A avaliação pode conter nota e comentário.
 
+**Critérios de aceitação**
+* O sistema impede avaliações duplicadas.
+* A nota deve estar dentro da escala definida (por exemplo, de 1 a 5).
+* A avaliação passa a ser exibida no perfil do usuário avaliado.
+
 ---
 
 ## US10 — Comunicação entre usuários
@@ -121,6 +165,10 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * O histórico das mensagens deve permanecer disponível.
 * Os usuários devem ser notificados sobre novas mensagens.
+
+**Critérios de aceitação**
+* As mensagens devem aparecer em ordem cronológica.
+* O histórico deve permanecer disponível após a conclusão do serviço.
 
 ---
 
@@ -134,3 +182,8 @@ As User Stories representam as principais funcionalidades do Tempus sob a perspe
 
 * O usuário deve informar o motivo da disputa.
 * A administração poderá acompanhar e analisar o caso.
+
+**Critérios de aceitação**
+
+* O sistema deve registrar a disputa.
+* O administrador deve visualizar todas as disputas abertas.
